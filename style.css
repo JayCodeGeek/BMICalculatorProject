@@ -1,0 +1,111 @@
+body {
+    font-family: "Mate SC", serif;
+  }
+.row{
+    background-color: rgb(174, 178, 255);
+}
+.title{
+    text-align: center;
+    height: 80px;
+    background-color: bisque
+}
+.title > p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.bmicontainer{
+    height: 70vh;
+    gap: 5%;
+}
+.bmicontainer div{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    background-color: bisque
+}
+.footer p{
+    margin: 0px;
+}
+a{
+    color: black;
+}
+a:hover{
+    font-weight: bold;
+    color: rgb(132, 132, 255);
+}
+input{
+    text-align: center;
+    border-radius: 20px;
+}
+
+.bmiOutput label{
+    margin: 20px;
+    font-weight: bold;
+}
+#weightImage{
+    margin: 0 auto;
+    height: 30vh;
+    width: 200px;
+    background-size: 100% 100%;
+}
+button{
+    border-radius: 20px;
+    background-color: rgb(255, 219, 152);
+}
+@media screen and (min-width:769px) {
+    .title{
+        font-size: 2rem;
+    }
+    .bmicontainer{
+        font-size: 1.7rem;
+        display: grid;
+        grid-template-rows: repeat(2,100px);
+        grid-template-columns: repeat(2,minmax(40%,80%));
+    }
+    .bmicontainer div.image{
+        grid-column: span 2;
+    }
+    .bmicontainer input{
+        width: 150px;
+    }
+    .bmiOutput{
+        grid-column: span 2;
+        height: 15vh;
+    }
+    .image{
+        height: 30vh;
+    }
+   .footer{
+    height: 16vh;
+    font-size: 1.8rem;
+   }
+
+
+}
+@media screen and (max-width:768px) {
+    .title{
+        font-size: 1.5rem;
+    }
+    .bmicontainer{
+        height: 78vh;
+        font-size: 1.2rem;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .bmicontainer div{
+        height: 12vh;
+        width: 90%;
+    }
+    .bmicontainer input{
+        width: 100px;
+    }
+    div.image{
+        height: 30vh;
+    }
+    .footer{
+        font-size: 1.3rem;
+        height: 10vh;
+    }
+}
